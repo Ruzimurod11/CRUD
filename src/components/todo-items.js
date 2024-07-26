@@ -5,15 +5,15 @@ import TodoItem from "./todo-item";
 
 const TodoItems = () => {
 	const todos = useSelector((state) => state.todos);
-	console.log(todos);
 	return (
 		<ul className="list-group list-group-flush">
 			{todos.length > 0 ? (
 				todos.map((item) => (
 					<TodoItem
 						key={item.id}
-						text={item.text}
+						title={item.title}
 						id={item.id}
+						isDone={item.isDone}
 					/>
 				))
 			) : (

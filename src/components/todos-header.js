@@ -3,7 +3,7 @@ import React from "react";
 const TodosHeader = () => {
 	return (
 		<div className="card-header">
-			<h1>Todos: 0</h1>
+			<h1>Todos</h1>
 		</div>
 	);
 };
